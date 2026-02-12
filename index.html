@@ -1,12 +1,30 @@
-# Weryfikacja
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rejestracja użytkownika</title>
+<style>
+body { 
+  background: #000; 
+  color: #fff; 
+  font-family: Arial; 
+  text-align: center; 
+  padding: 20px;
+}
+input, button { 
+  padding: 10px; 
+  margin: 10px 0; 
+  border-radius: 5px; 
+}
+button { 
+  background: red; 
+  color: white; 
+  border: none; 
+}
+</style>
 </head>
-
-<body style="background:black;color:white;text-align:center;font-family:Arial;">
+<body>
 
 <h2>Rejestracja użytkownika</h2>
 <p>Weryfikacja potwierdzana od 12:00 do 22:00</p>
@@ -14,14 +32,13 @@
 <form name="rejestracja" method="POST" data-netlify="true" enctype="multipart/form-data">
 <input type="hidden" name="form-name" value="rejestracja">
 
-<p>Nick</p>
-<input type="text" name="nick" required><br><br>
+<p>Nick:</p>
+<input type="text" name="nick" placeholder="np. user0134" required><br>
 
-<p>Zdjęcie</p>
-<input type="file" name="zdjecie" required><br><br>
+<p>Zdjęcie:</p>
+<input type="file" name="zdjecie" accept="image/*" required><br>
 
 <button type="submit">ZAREJESTRUJ</button>
-
 </form>
 
 </body>
